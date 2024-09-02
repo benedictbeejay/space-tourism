@@ -41,17 +41,20 @@ p {
 } */
 
 .home {
-  background: url("./starter-code/assets/home/background-home-desktop.jpg") 
+  background: 
+  url("./starter-code/assets/home/background-home-desktop.jpg") 
     no-repeat center/cover;
   height: calc(100vh + 1px);
 
 }
 
-@media (min-width: 768) {
+@media (max-width: 640px) {
   .home {
-    background: url("./starter-code/assets/home/background-home-mobile.jpg")
-      no-repeat center/cover;
+    background: 
+    url("./starter-code/assets/home/background-home-mobile.jpg") 
+    no-repeat center/cover;  
   }
 }
+    
 
 

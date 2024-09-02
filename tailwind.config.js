@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      // backgroundImage : {
+      //   "Mobile": "url('/src/starter-code/assets/home/background-home-mobile.jpg')",
+      //   'Desktop': "url('/src/starter-code/assets/home/background-home-desktop.jpg')"
+
+      // }
+    },
     screens: {
       'sm': '640px',
       'md': '768px',
