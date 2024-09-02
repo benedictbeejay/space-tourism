@@ -15,3 +15,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h2 {
+  font-family: "Zen Antique", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+button, img {
+  user-select: none;
+}
+p {
+  line-height: 1.8;
+}
+/* .gray {
+  color: #7e7e7e;
+}
+|
+.white {
+  color: #ffffff;
+} */
+
+.home {
+  background: url("./starter-code/assets/home/background-home-desktop.jpg") 
+    no-repeat center/cover;
+  height: calc(100vh + 1px);
+
+}
+
+@media (min-width: 768) {
+  .home {
+    background: url("./starter-code/assets/home/background-home-mobile.jpg")
+      no-repeat center/cover;
+  }
+}
+
+
