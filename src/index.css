@@ -41,6 +41,22 @@ p {
   color: #ffffff;
 } */
 
+.header .navbar {
+  position: absolute;
+  background-color: #fff;
+  width: calc(100vw - 100px);
+  top: calc(90px-10px);
+  padding: 20px;
+  left: 50%;
+  /* transform: translateX(-50%); */
+} 
+
+.header .navbar ul li {
+  margin: 40px 0;
+
+}
+
+
 .home {
   background: 
   url("./starter-code/assets/home/background-home-desktop.jpg") 
@@ -48,6 +64,7 @@ p {
   height: calc(100vh + 1px);
 
 }
+
 
 @media (max-width: 640px) {
   .home {

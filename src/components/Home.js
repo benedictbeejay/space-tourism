@@ -7,10 +7,10 @@ const Home = () => {
     <div>
       <section className="home px-5 flex flex-col items-center justify-center text-center">
       
-        <div className='overlay flex flex-col md:grid md:grid-cols-2 md:text-left md:m-auto md:gap-10 md:max-w-screen-lg items-center justify-center text-center h-full'>
-          <article>
+        <div className='overlay flex flex-col md:grid md:grid-cols-2 md:text-left md:m-auto md:gap-10 lg:max-w-screen-lg  md:w-3/4 items-center justify-center text-center h-full'>
+          <article className=''>
             <h1 className='text-2xl text-gray-400 '>SO, YOU WANT TO TRAVEL TO 
-              <span className='block text-4xl lg:text-4xl text-white mt-5 mb-10'>
+              <span className='block text-4xl lg:text-6xl text-white mt-5 mb-10'>
                 SPACE
               </span>
             </h1>
