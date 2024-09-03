@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-      <section className="home px-5 flex items-center justify-center text-center">
+      <section className="home px-5 flex flex-col items-center justify-center text-center">
       
-        <div className='overlay flex flex-col items-center justify-center text-center h-full'>
+        <div className='overlay flex flex-col md:grid md:grid-cols-2 md:text-left md:m-auto md:gap-10 md:max-w-screen-lg items-center justify-center text-center h-full'>
           <article>
             <h1 className='text-2xl text-gray-400 '>SO, YOU WANT TO TRAVEL TO 
-              <span className='block text-4xl lg:text-6xl text-white mt-5 mb-10'>
+              <span className='block text-4xl lg:text-4xl text-white mt-5 mb-10'>
                 SPACE
               </span>
             </h1>
@@ -19,8 +19,8 @@ const Home = () => {
             </p>
           </article> 
           
-          <article className='mt-20'>
-            <button className='w-48 h-48 rounded-full bg-white text-gray-800 uppercase font-semibold text-4xl  animate-pulse'>
+          <article className='mt-20 md:mt-0 '>
+            <button className='w-48 h-48 md:ml-40 rounded-full bg-white text-gray-800 uppercase font-semibold text-4xl  animate-pulse'>
               <Link to="/destination">
                 Explore
               </Link>

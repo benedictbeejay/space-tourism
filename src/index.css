@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* font-size: 18px; */
 }
 
 code {
@@ -55,6 +56,14 @@ p {
     no-repeat center/cover;  
   }
 }
+
+/* @media (min-width: 768px) {
+  .home .overlay {
+    display: grid;
+    grid-template-columns: repeat(2, 1 fr);
+    gap: 1 rem;
+  }
+} */
     
 
 
