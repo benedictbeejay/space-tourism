@@ -41,15 +41,22 @@ p {
   color: #ffffff;
 } */
 
-.header .navbar {
+/* .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+} */
+/* .header .navbar {
   position: absolute;
   background-color: #fff;
   width: calc(100vw - 100px);
-  top: calc(90px-10px);
+  top: calc(90px - 10px);
   padding: 20px;
   left: 50%;
-  /* transform: translateX(-50%); */
-} 
+  transform: translateX(-50%);
+  transition: top 0.5s ease-in-out;
+}  */
 
 .header .navbar ul li {
   margin: 40px 0;

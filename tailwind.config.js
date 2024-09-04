@@ -3,14 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      // backgroundImage : {
-      //   "Mobile": "url('/src/starter-code/assets/home/background-home-mobile.jpg')",
-      //   'Desktop': "url('/src/starter-code/assets/home/background-home-desktop.jpg')"
-
-      // }
+      transitionProperty : {
+        'top': 'top 0.5s ease-in-out',
+      }
     },
     screens: {
-      'sm': '480px',
+      'sm': '640px',
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
