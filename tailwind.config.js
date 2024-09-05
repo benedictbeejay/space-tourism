@@ -5,7 +5,13 @@ module.exports = {
     extend: {
       transitionProperty : {
         'top': 'top 0.5s ease-in-out',
+      },
+      backgroundColor : {
+        'transparent' : 'rgba(255, 255, 255, 0.5)'
       }
+      // inset : {
+      //   'offScreen' : ''
+      // }
     },
     screens: {
       'sm': '640px',

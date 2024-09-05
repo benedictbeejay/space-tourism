@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-      <section className="home px-5 flex flex-col items-center justify-center text-center">
+      <section className="home px-5 flex flex-col items-center justify-center text-center ">
       
-        <div className='overlay flex flex-col md:grid md:grid-cols-2 md:text-left md:m-auto md:gap-10 lg:max-w-screen-lg  md:w-3/4 items-center justify-center text-center h-full'>
+        <div className='overlay flex flex-col md:grid md:grid-cols-2 md:text-left md:m-auto mt-16 md:gap-10 lg:max-w-screen-lg  md:w-3/4 items-center justify-center text-center h-full'>
           <article className=''>
             <h1 className='text-2xl text-gray-400 '>SO, YOU WANT TO TRAVEL TO 
               <span className='block text-4xl lg:text-6xl text-white mt-5 mb-10'>
