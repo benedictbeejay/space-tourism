@@ -20,32 +20,32 @@ const Header = () => {
                 <img src={Logo} alt='#' title='Space Title'/>
             </Link>
         </div>
-        <nav className='navbar sm:bg-transparent sm:w-auto sm:top-0 sm:left-0 md:left-30 lg:left-48 lg:-translate-x-16 sm:-translate-x-0 sm:relative absolute bg-white w-11/12 p-5 left-1/2 -top- -translate-x-1/2 '>
-          <ul className='sm:flex '>
+        <nav className='navbar md:backdrop-blur-sm md: md:bg-transparent md:w-auto md:top-0 md:left-0 md:left-30 lg:left-48 lg:-translate-x-16 md:-translate-x-0 md:relative absolute bg-white w-11/12 p-5 left-1/2 -top- -translate-x-1/2 '>
+          <ul className='md:flex '>
             <li className='list-item'>
-              <Link to="/">
-                <span>00</span> Home
+              <Link to="/" className='lg:text-white lg:flex lg:items-center'>
+                <span className="lg:text-2xl lg:font-bold mr-2">00</span> Home
               </Link>
             </li>
             <li className='list-item '>
-              <Link to="/destination">
-                <span>01</span> Destination
+              <Link to="/destination" className='lg:text-white lg:flex lg:items-center '>
+                <span className="lg:text-2xl lg:font-bold mr-2">01</span> Destination
               </Link>
             </li>
             <li className='list-item '>
-              <Link to="/crew">
-                <span>02</span> Crew
+              <Link to="/crew"  className='lg:text-white lg:flex lg:items-center'>
+                <span className="lg:text-2xl lg:font-bold mr-2 ">02</span> Crew
               </Link>
             </li>
             <li className='list-item '>
-              <Link to="/technology">
-                <span>03</span> Technology
+              <Link to="/technology" className='lg:text-white lg:flex lg:items-center'>
+                <span className="lg:text-2xl lg:font-bold mr-2 ">03</span> Technology
               </Link>
             </li>
           </ul>
         </nav>
         <div>
-          <button className='sm:hidden ' onClick={handleClick}>
+          <button className='md:hidden ' onClick={handleClick}>
             <CgMenuLeft className="text-white text-4xl "/>
           </button>
         </div>
