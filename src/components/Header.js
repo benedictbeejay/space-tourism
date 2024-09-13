@@ -15,13 +15,13 @@ const Header = () => {
   return (
     <div className=''>
       <header className='header  sm:flex-row flex absolute top-0 left-0 p-4 items-center justify-between w-full'>
-        <div className='z-10 flex absolute ml-4'>
+        <div className='z-10 flex absolute ml-4 mt-10 md:mt-0'>
             <Link to="/">
                 <img src={Logo} alt='#' title='Space Title'/>
             </Link>
         </div>
-        <nav className='navbar md:backdrop-blur-sm  md:bg-transparent md:h-20   md:top-0  md:relative md:w-full absolute bg-white w-11/12 p-5 md:left-0 md:-translate-x-0 left-1/2  -translate-x-1/2 '>
-          <ul className='md:flex md:max-w-56 absolute right-96 mr-20  '>
+        <nav className='navbar md:backdrop-blur-sm  md:bg-transparent md:h-20  md:top-0  md:relative md:w-full absolute bg-white w-11/12 p-5 md:left-0 md:-translate-x-0 left-1/2  -translate-x-1/2 '>
+          <ul className='md:flex md:max-w-56 md:absolute right-96 mr-20  '>
             <li className='list-item'>
               <Link to="/" className='md:text-white md:flex md:items-center'>
                 <span className="md:text-2xl md:font-bold mr-2">00</span> Home
@@ -44,8 +44,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div>
-          <button className='md:hidden ' onClick={handleClick}>
+        <div className=' md:hidden flex absolute right-0 mr-6 mt-10'>
+          <button className='md:hidden  l' onClick={handleClick}>
             <CgMenuLeft className="text-white text-4xl "/>
           </button>
         </div>
