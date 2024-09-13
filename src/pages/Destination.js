@@ -23,28 +23,36 @@ const Destination = () => {
 
   return (
     <>
-      <section>
-        <h1>
+      <section className='home destination px-5 '> 
+        <h1 className='absolute'>
           01 Pick your destination
         </h1>
-        <div>
-          <article>
-            <img src={planetImages}  alt={name}  title={name} />           
+        <div className='pt-10 h-screen md:pt-20 md:grid md:grid-cols-2 md:gap-5 md:items-center lg:max-w-6xl lg:mx-auto'>
+          <article className='md:h-2/3 sm:h-1/4 md:items-center md:flex md:justify-center'>
+            <img className='block mx-auto md:flex  md:w-2/3 sm:w-1/2 w-2/3 mt-4 mb-4' src={planetImages}  alt={name}  title={name} />           
           </article>
 
-          <article>
-            <h2>
+          <article className='text-center md:text-left md:mt-0 sm:mt-44'>
+
+            {planets.map((item, index) => (
+              <button key={index} onClick={() => setValue(index)} 
+              className={`uppercase text-white sm:text-2xl text-xl pb-2 mx-2 ${index === value && "border-b border-white"}`}>
+                {item.name}
+              </button>
+            ))}
+
+            <h2 className='text-3xl md:text-5xl font-bold text-white mt-4 mb-4 uppercase tracking-widest'>
               {name}
             </h2>
-            <p>
+            <p className='text-gray-400'>
               {description}
             </p>
             <ul>
-              <li>
-                {distance}
+              <li className='text-gray-400'>
+                Avg. Distance {distance}
               </li>
-              <li>
-                {travel}
+              <li className='text-gray-400'>
+                Est. Travel Time {travel}
               </li>
             </ul>
           </article>
