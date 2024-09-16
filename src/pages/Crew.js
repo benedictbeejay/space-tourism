@@ -16,11 +16,9 @@ const Crew = () => {
   const [value, setValue] = useState(0)
   const planetImages = imagePlanet[value]
 
-  const {name, images, role, bio} =
+  const {name, role, bio} =
   people[value]
-  console.log(images.png);
-  // console.log(imagePlanet);
-  // console.log(Moon)
+
 
   return (
     <>
@@ -28,13 +26,12 @@ const Crew = () => {
         <h1 className='md:absolute pt-8 lg:left-56 md:left-40 md:pt-32 relative left-1/2 w-fit -translate-x-1/2  lg:mx-auto lg:max-w-7xl text-white text-lg  uppercase md:text-2xl '>
           02 Meet your Crew
         </h1>
-        <div className=' flex items-center justify-center flex-col-reverse md:top-1/2 mt-4 md:mt-0 md:relative md:-translate-y-1/2 md:pt-20 md:grid md:grid-cols-2 md:gap-5 md:items-center lg:max-w-6xl lg:mx-auto'>
+        <div className=' flex items-center justify-center flex-col-reverse top-1/2  md:mt-0 relative -translate-y-1/2 md:pt-20 md:grid md:grid-cols-2 md:gap-5 md:items-center lg:max-w-6xl lg:mx-auto'>
 
           <article className='text-center md:text-left md:mt-0 sm:mt-44'>
 
-            
-
-            <h2 className='text-3xl md:text-3xl font-bold text-white mt-4 mb-4 md:mx-2 uppercase tracking-widest'>
+            <h4 className='uppercase text-gray-400 mt-2 mx-2 md:mb-4 text-2xl'>{role}</h4>
+            <h2 className='text-3xl md:text-3xl font-bold text-white mb:mt-4 mb-4 md:mx-2 uppercase tracking-widest'>
               {name}
             </h2>
             <p className='text-gray-400 md:mx-2 pb-2 md:pb-5'>
@@ -51,7 +48,7 @@ const Crew = () => {
            
           </article>
           <article className=''>
-            <img className=' mx-auto md:flex h-1/3 md:w-2/3 w-3/5' src={planetImages}  alt={name}  title={name} />           
+            <img className=' mx-auto md:flex  md:w-2/3 w-5/12' src={planetImages}  alt={name}  title={name} />           
           </article>
         </div>
       </section> 

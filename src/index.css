@@ -83,6 +83,11 @@ p {
     url('./starter-code/assets/crew/background-crew-mobile.jpg') no-repeat center/cover;
 }
 
+.technology {
+  background:
+    url('./starter-code/assets/technology/background-technology-mobile.jpg') no-repeat center/cover;
+}
+
 
 @media (min-width: 768px) {
   .home {
@@ -102,6 +107,10 @@ p {
       background:
         url('./starter-code/assets/crew/background-crew-tablet.jpg') no-repeat center/cover;
     }
+    .technology {
+      background:
+        url('./starter-code/assets/technology/background-technology-tablet.jpg') no-repeat center/cover;
+    }
 }
 @media (min-width: 102px) {
   .home {
@@ -117,6 +126,11 @@ p {
 .crew {
   background:
     url('./starter-code/assets/crew/background-crew-desktop.jpg') no-repeat center/cover;
+}
+
+.technology {
+  background:
+    url('./starter-code/assets/technology/background-technology-desktop.jpg') no-repeat center/cover;
 }
 
 }
