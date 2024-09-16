@@ -14,8 +14,8 @@ const Header = () => {
   }
   return (
     <div className=''>
-      <header className='header  sm:flex-row flex absolute top-0 left-0 p-4 items-center justify-between w-full'>
-        <div className='z-10 flex absolute ml-4 mt-10 md:mt-0'>
+      <header className='header z-10  sm:flex-row flex absolute top-0 left-0 p-4 items-center justify-between w-full'>
+        <div className='z-20 flex absolute ml-4 mt-10 md:mt-0'>
             <Link to="/">
                 <img src={Logo} alt='#' title='Space Title'/>
             </Link>
