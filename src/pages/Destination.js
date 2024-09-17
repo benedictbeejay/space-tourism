@@ -24,7 +24,7 @@ const Destination = () => {
   return (
     <>
       <section className='home destination px-5 py-5'> 
-        <h1 className='md:absolute  md:pt-32 lg:mx-auto lg:max-w-7xl text-white text-xl uppercase md:text-2xl '>
+        <h1 className=' md:absolute lg:left- md:left-20 md:pt-32 md:-translate-x-0 relative left-1/2 w-fit -translate-x-1/2  lg:mx-auto lg:max-w-7xl text-white text-lg  uppercase md:text-2xl  '>
           01 Pick your destination
         </h1>
         <div className='md:top-1/2 md:relative md:-translate-y-1/2 md:pt-20 md:grid md:grid-cols-2 md:gap-5 md:items-center lg:max-w-6xl lg:mx-auto'>
@@ -32,11 +32,11 @@ const Destination = () => {
             <img className='block mx-auto md:flex  md:w-2/3 sm:w-1/2 w-2/3 mt-4 mb-4' src={planetImages}  alt={name}  title={name} />           
           </article>
 
-          <article className='text-center md:text-left md:mt-0 sm:mt-44'>
+          <article className='text-center md:text-left md:mt-0 '>
 
             {planets.map((item, index) => (
               <button key={index} onClick={() => setValue(index)} 
-              className={`uppercase text-white sm:text-2xl text-xl pb-2  mx-2 ${index === value && "border-b border-white"}`}>
+              className={`uppercase text-white sm:text-2xl text-xl pb-1  mx-2 ${index === value && "border-b border-white"}`}>
                 {item.name}
               </button>
             ))}

@@ -33,7 +33,7 @@ const Technology = () => {
           02 Space Launch 101
         </h1>
         <div className=' flex items-center justify-center flex-col-reverse top-1/2 md:mt-0 -mt-6 relative -translate-y-1/2 md:pt-20 md:grid md:grid-cols-2 md:gap-5 md:items-center  lg:max-w-6xl lg:mx-auto'>
-          <article className='text-center md:text-left md:mt-0 sm:mt-44 lg:flex items-center'>
+          <article className='text-center md:text-left md:mt-0  lg:flex items-center'>
             <div className=''>
               {cards.map((item, index) => (
                 <button key={index} onClick={() => setValue(index)} 
