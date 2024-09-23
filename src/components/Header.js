@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from "../starter-code/assets/shared/logo.svg"
 import {CgMenuLeft} from "react-icons/cg" 
+import {motion} from 'framer-motion'
+
+
 
 const Header = () => {
 
@@ -20,28 +23,29 @@ const Header = () => {
                 <img src={Logo} alt='#' title='Space Title'/>
             </Link>
         </div>
-        <nav className='navbar md:backdrop-blur-sm  md:bg-transparent md:h-20  md:top-0  md:relative md:w-full absolute bg-white w-11/12 p-5 md:left-0 md:-translate-x-0 left-1/2  -translate-x-1/2 '>
-          <ul className='md:flex md:max-w-56 md:absolute right-96 mr-20  '>
-            <li className='list-item'>
-              <Link to="/" className='md:text-white md:flex md:items-center'>
+        <nav className='navbar md:backdrop-blur-sm  md:bg-transparent md:h-20  md:top-0  md:relative md:w-full absolute bg-gray-800 w-11/12 px-5 md:left-0 md:-translate-x-0 left-1/2  -translate-x-1/2 '>
+          <ul className='md:flex md:max-w-56 md:absolute right-96 md:mr-20  md:h-full'>
+            <motion.li
+              className='list-item md:border-b-4 md:border-white/0 md:hover:border-white/100 duration-300'>
+              <Link to="/" className='text-white md:flex md:items-center md:relative md:top-1/2 md:-translate-y-1/2   flex justify-center'>
                 <span className="md:text-2xl md:font-bold mr-2">00</span> Home
               </Link>
-            </li>
-            <li className='list-item '>
-              <Link to="/destination" className='md:text-white md:flex md:items-center '>
+            </motion.li>
+            <motion.li className='list-item md:border-b-4 md:border-white/0 md:hover:border-white/100 duration-300'>
+              <Link to="/destination" className='text-white md:flex md:items-center md:relative md:top-1/2 md:-translate-y-1/2 flex justify-center'>
                 <span className="md:text-2xl md:font-bold mr-2">01</span> Destination
               </Link>
-            </li>
-            <li className='list-item '>
-              <Link to="/crew"  className='md:text-white md:flex md:items-center'>
+            </motion.li>
+            <motion.li className='list-item md:border-b-4 md:border-white/0 md:hover:border-white/100 duration-300'>
+              <Link to="/crew"  className='text-white md:flex md:items-center md:relative md:top-1/2 md:-translate-y-1/2 flex justify-center'>
                 <span className="md:text-2xl md:font-bold mr-2 ">02</span> Crew
               </Link>
-            </li>
-            <li className='list-item '>
-              <Link to="/technology" className='md:text-white md:flex md:items-center'>
+            </motion.li>
+            <motion.li className='list-item md:border-b-4 md:border-white/0 md:hover:border-white/100 duration-300'>
+              <Link to="/technology" className='text-white md:flex md:items-center md:relative md:top-1/2 md:-translate-y-1/2 flex justify-center'>
                 <span className="md:text-2xl md:font-bold mr-2 ">03</span> Technology
               </Link>
-            </li>
+            </motion.li>
           </ul>
         </nav>
         <div className=' md:hidden flex absolute right-0 mr-6 mt-10'>
